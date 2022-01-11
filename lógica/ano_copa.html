@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var primeiraCopa = 1930;
+    numeroCopas = primeiraCopa + 4;
+    var anoAtual = parseInt(prompt("Informe o ano atual:"));
+    while(numeroCopas <= anoAtual) {
+        var numeroCopas = primeiraCopa + 4;
+        mostra ("Até o ano atual, houve " +numeroCopas + " copas");
+        mostra("Fim");   
+}
+
+</script>

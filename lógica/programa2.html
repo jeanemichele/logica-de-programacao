@@ -1,0 +1,20 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+	function desenhaQuadrado(x, y, cor) {
+
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext('2d');
+
+	pincel.fillStyle = 'cor';
+	pincel.fillRect (x, 0, y, 50);
+	pincel.fillStroke = 'cor';
+	pincel.strokeRect (x, 0, y, 50);
+
+}
+	
+desenhaQuadrado(0, 50, 'blue');
+desenhaQuadrado(50, 50, 'yellow');
+desenhaQuadrado(100, 50, 'red');
+
+</script>
